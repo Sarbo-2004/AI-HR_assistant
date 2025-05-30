@@ -29,7 +29,7 @@ Whether it's handling recruitment, onboarding, employee feedback, document gener
 - **Policy Query Bot**  
   Answers questions on company policies, benefits, leaves, and more through natural language.
 
-[[- **Performance Review Generator**  
+[- **Performance Review Generator**  
   Auto-generates review templates and summary reports from raw manager and peer inputs.
 
 - **Exit Interview Automator**  
