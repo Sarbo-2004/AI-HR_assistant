@@ -29,7 +29,7 @@ Whether it's handling recruitment, onboarding, employee feedback, document gener
 - **Policy Query Bot**  
   Answers questions on company policies, benefits, leaves, and more through natural language.
 
-[- **Performance Review Generator**  
+[[- **Performance Review Generator**  
   Auto-generates review templates and summary reports from raw manager and peer inputs.
 
 - **Exit Interview Automator**  
@@ -37,9 +37,9 @@ Whether it's handling recruitment, onboarding, employee feedback, document gener
 
 - **Diversity & Inclusion Analyzer**  
   Monitors recruitment and promotion trends to detect possible bias and suggest improvements.
-
+](url)
 - **Compliance Tracker**  
-  Flags possible risks in employment processes and policy adherence.](url)
+  Flags possible risks in employment processes and policy adherence.
 
 - **AI-Powered HR Chat Companion**  
   For day-to-day operations like document drafts, announcements, reminders, and more.
