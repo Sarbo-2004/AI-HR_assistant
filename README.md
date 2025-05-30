@@ -23,13 +23,13 @@ Whether it's handling recruitment, onboarding, employee feedback, document gener
 - **AI-Driven Candidate Communication**  
   Drafts custom emails and messages for rejections, interviews, follow-ups, and offers.
 
-- **Employee Onboarding Assistant**  
-  Creates personalized onboarding plans, sends documentation, and introduces team structure.
+[- **Employee Onboarding Assistant**  
+  Creates personalized onboarding plans, sends documentation, and introduces team structure.](url)
 
 - **Policy Query Bot**  
   Answers questions on company policies, benefits, leaves, and more through natural language.
 
-- **Performance Review Generator**  
+[- **Performance Review Generator**  
   Auto-generates review templates and summary reports from raw manager and peer inputs.
 
 - **Exit Interview Automator**  
@@ -39,7 +39,7 @@ Whether it's handling recruitment, onboarding, employee feedback, document gener
   Monitors recruitment and promotion trends to detect possible bias and suggest improvements.
 
 - **Compliance Tracker**  
-  Flags possible risks in employment processes and policy adherence.
+  Flags possible risks in employment processes and policy adherence.](url)
 
 - **AI-Powered HR Chat Companion**  
   For day-to-day operations like document drafts, announcements, reminders, and more.
