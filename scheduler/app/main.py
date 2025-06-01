@@ -3,11 +3,11 @@ from pydantic import BaseModel
 from datetime import datetime
 import os
 
-from .google_auth import get_calendar_service, get_gmail_service
-from .scheduler import next_working_time_slot, create_interview_event
-from .email_sender import create_message, send_email
-from .db import get_interviewee_email
-from .config import GOOGLE_API_SCOPES
+from google_auth import get_calendar_service, get_gmail_service
+from scheduler import next_working_time_slot, create_interview_event
+from email_sender import create_message, send_email
+from db import get_interviewee_email
+from config import GOOGLE_API_SCOPES
 
 
 app = FastAPI()
