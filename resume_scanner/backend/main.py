@@ -1,15 +1,14 @@
-# main.py
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse, StreamingResponse
+from fastapi.responses import StreamingResponse, JSONResponse
 import os
-from tempfile import NamedTemporaryFile, TemporaryDirectory
-from gemini_matcher import score_resume
-from scorer import parse_gemini_response, rank_resumes
-from utils import get_text_from_file
+from tempfile import TemporaryDirectory
 import zipfile
 import pandas as pd
 import io
+from gemini_matcher import score_resume
+from scorer import parse_gemini_response, rank_resumes
+from utils import get_text_from_file
 
 app = FastAPI()
 
@@ -21,32 +20,31 @@ app.add_middleware(
 )
 
 @app.post("/rank/")
-async def rank_resumes_api(
-    jd_file: UploadFile = File(...),
-    uploads: list[UploadFile] = File(...)
-):
-    # 1. Read JD text
-    jd_temp = NamedTemporaryFile(delete=False, suffix=".txt")
-    jd_temp.write(await jd_file.read())
-    jd_temp.close()
-    jd_text = get_text_from_file(jd_temp.name)
-    os.remove(jd_temp.name)
-
-    results = []
+async def rank_resumes_api(uploads: list[UploadFile] = File(...)):
+    jd_text = None
+    resumes = []
 
     with TemporaryDirectory() as tmpdir:
         for upload in uploads:
             ext = os.path.splitext(upload.filename)[1].lower()
+            temp_path = os.path.join(tmpdir, upload.filename)
 
-            if ext == ".zip":
-                # Unzip and process all .pdf/.txt files
-                zip_path = os.path.join(tmpdir, upload.filename)
-                with open(zip_path, "wb") as f:
-                    f.write(await upload.read())
-                
-                with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+            with open(temp_path, "wb") as f:
+                f.write(await upload.read())
+
+            if "jd" in upload.filename.lower() or "job" in upload.filename.lower():
+                jd_text = get_text_from_file(temp_path)
+            else:
+                resumes.append((upload.filename, temp_path))
+
+        if not jd_text:
+            return JSONResponse(status_code=400, content={"error": "JD file not found. Please include a file with 'jd' or 'job' in the name."})
+
+        results = []
+        for filename, path in resumes:
+            if filename.endswith(".zip"):
+                with zipfile.ZipFile(path, 'r') as zip_ref:
                     zip_ref.extractall(tmpdir)
-                
                 for root, _, files in os.walk(tmpdir):
                     for fname in files:
                         if fname.lower().endswith((".pdf", ".txt")):
@@ -56,21 +54,14 @@ async def rank_resumes_api(
                             parsed = parse_gemini_response(raw)
                             parsed["filename"] = fname
                             results.append(parsed)
-
-            elif ext in [".pdf", ".txt"]:
-                temp_path = os.path.join(tmpdir, upload.filename)
-                with open(temp_path, "wb") as f:
-                    f.write(await upload.read())
-                resume_text = get_text_from_file(temp_path)
+            elif filename.endswith((".pdf", ".txt")):
+                resume_text = get_text_from_file(path)
                 raw = score_resume(jd_text, resume_text)
                 parsed = parse_gemini_response(raw)
-                parsed["filename"] = upload.filename
+                parsed["filename"] = filename
                 results.append(parsed)
 
-    # Rank resumes
     ranked = rank_resumes(results)
-
-    # Create CSV
     df = pd.DataFrame(ranked)
     csv_stream = io.StringIO()
     df.to_csv(csv_stream, index=False)
