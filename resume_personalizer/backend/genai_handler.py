@@ -24,7 +24,7 @@ Matched Skills: {', '.join(matched_skills)}
 
     summary_prompt = base_prompt + """
 Write a section titled 'PROFESSIONAL SUMMARY' using 5-7 bullet points.
-Each point should begin with '● ' and describe a strength, experience, or achievement related to the JD.
+Each point should begin with '● ' and describe a strength, experience, or achievement related to the JD. Make it short, auick and impactful.
 """
 
     skills_prompt = base_prompt + """
@@ -40,11 +40,11 @@ Each should be a single line, comma-separated, and labeled. No bullets.
 
     experience_prompt = base_prompt + """
 Write an EXPERIENCE section in 3-5 bullet points, starting each with '● '.
-Only include experience that aligns with the JD.
+Only include experience that aligns with the JD. If it is not present, then tell no experience present
 """
 
     projects_prompt = base_prompt + """
-Write a PROJECTS section with 2-3 titled projects.
+Write a PROJECTS section for all the titled projects given by the user.
 For each, write 3-4 bullet points that start with '● '.
 Include the impact or outcome of the project.
 """
