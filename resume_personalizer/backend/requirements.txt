@@ -1,0 +1,13 @@
+fastapi 
+uvicorn 
+pydantic 
+google-generativeai 
+spacy 
+keybert 
+sentence-transformers 
+scikit-learn 
+python-multipart
+spacy 
+download 
+en_core_web_sm
+PyPdf2

@@ -1,0 +1,13 @@
+{
+  "candidate": {
+    "name": "Amit Roy",
+    "email": "amit@example.com",
+    "phone": "9999999999",
+    "education": "B.Tech in Computer Science",
+    "experience": "2 years as a Data Analyst at Infosys",
+    "skills": ["Python", "SQL", "Power BI", "Tableau", "Excel"],
+    "certifications": "Tableau Analyst",
+    "projects": "Customer Segmentation using KMeans"
+  },
+  "job_description": "We are looking for a Data Analyst with expertise in SQL, Python, Power BI, and Excel. The ideal candidate should be able to clean and analyze data from large datasets, create interactive dashboards, and present findings."
+}

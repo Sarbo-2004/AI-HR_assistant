@@ -1,0 +1,63 @@
+About the job
+Description
+
+At Zego, we know that traditional motor insurance holds good drivers back. It's too complicated, too expensive, and it doesn't take into account how well you actually drive. 
+
+That's why, since 2016, we've been on a mission to change all of that. Our mission at Zego is to offer the lowest priced insurance for good drivers.
+
+From van drivers and gig workers to everyday car drivers, our customers are our driving force — they're at the heart of everything we do.
+
+We've sold tens of millions of policies so far, and raised over $200 million in funding. And we're only just getting started.
+
+Who we're looking for
+
+We are looking for a highly motivated Data Scientist, who is keen on building advanced predictive models and joining our growing Core Pricing team. The mission is to build a world-class Data Science team that turns ideas and resolves complex challenges into production-grade pricing and risk models effectively, safely, and consistently.
+
+What you'll do
+
+Explore & analyse large telematics, policy and quote datasets to uncover trends and opportunities
+Build and validate statistical & machine learning models that power pricing and risk selection
+Collaborate with Engineering, Actuarial and Product to frame business problems and productionise models
+Communicate insights clearly through dashboards, visualisations and storytelling
+Contribute to best practice in code review, experimentation and shaping our ways of working as you grow
+
+What you'll bring
+
+Recently completed (or soon to complete) Bachelor's or Master's in Statistics, Mathematics, Computer Science, Engineering, Physics, Economics or a related quantitative field
+Strong grounding in probability, statistics and machine learning fundamentals
+Working knowledge of Python (pandas, NumPy, scikit‑learn), and basic SQL
+Curiosity, problem‑solving mindset and the ability to present complex ideas simply
+Right to work in the UK
+
+
+Nice to have (but not essential)
+
+Internship or course project involving real‑world data analysis or modelling
+Familiarity with cloud platforms (e.g. AWS) and version control (git)
+Experience with BI / visualisation tools (e.g. Looker)
+
+What's it like to work at Zego?
+
+Joining Zego is a career-defining move. People go further here, reaching their full potential to achieve extraordinary things. 
+
+We're spread throughout the UK and Europe, and united by our drive to get things done. We're proud of our company and our culture - a friendly and inclusive space where we can lift each other up and celebrate our wins every day.
+
+Together, we're setting the bar higher, delivering exceptional work that makes a difference. Our people are the most important part of our story, and everyone here plays a role. There's loads of room to learn and grow, and you'll get the freedom to steer your career wherever you want.
+
+You'll work alongside a talented group who embrace each other's differences and aren't afraid of a challenge. We recognise our achievements, learn from our mistakes, and help each other to be the best we can be. Together, we're making insurance matter. 
+
+How we work
+
+We believe that teams work better when they have time to collaborate and space to get things done. We call it Zego Hybrid. We ask you to spend at least one day a week in our central London office. We think it's a good mix of collaborative face time and flexible home-working, setting us up to achieve the right balance between work and life.
+
+Our approach to AI
+
+We believe in the power of AI to meaningfully improve how we work - helping us move faster, think differently, and focus on what matters most. At Zego, we encourage people to stay curious and intentional about how AI is leveraged in their work and teams to drive practical impact every day. This is your chance to do the most meaningful work of your career - and we'll provide you with the tools, support, and freedom to do it well.
+
+Benefits
+
+We reward our people well. Join us and you'll get a market-competitive salary, private medical insurance, company share options, generous holiday allowance, and a whole lot of wellbeing benefits. We also offer an annual flexible hybrid working contribution, which you can use to support with your travel to the office or towards your own personal development. And that's just for starters! 
+
+There's more to Zego than just a job - Check out our blog for insights, stories, and more.
+
+We're an equal opportunity employer and we value diversity at our company. We do not discriminate on the basis of race, religion, national origin, gender, sexual orientation, age, marital status, or disability status.
