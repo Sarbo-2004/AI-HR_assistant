@@ -49,6 +49,10 @@ def extract_text_from_file(file: UploadFile) -> str:
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"File error: {str(e)}")
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello from FastAPI"}
+
 @app.post("/generate_resume/")
 async def generate_section(
     candidate_data: str = Form(...),
