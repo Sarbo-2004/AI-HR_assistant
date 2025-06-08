@@ -9,5 +9,5 @@ scikit-learn
 python-multipart
 spacy 
 download 
-en_core_web_sm
 PyPdf2
+dotenv
