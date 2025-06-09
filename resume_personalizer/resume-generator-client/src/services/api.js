@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = '';
+const API_BASE_URL = 'https://resume-personalizer-backend.bravesky-1ea569d9.eastus.azurecontainerapps.io';
 
 export const generateResume = async (candidateData, jdFile) => {
   const formData = new FormData();
